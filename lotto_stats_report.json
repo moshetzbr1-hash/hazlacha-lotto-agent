@@ -1,0 +1,37 @@
+{
+  "status": "insufficient_data_for_candidate_sets",
+  "generated_at": "2026-05-16T22:38:01+03:00",
+  "data_range": {
+    "from": "2026-04-28",
+    "to": "2026-04-28"
+  },
+  "total_draws": 1,
+  "windows": {
+    "60": {
+      "draw_count": 1,
+      "range": {
+        "from": "2026-04-28",
+        "to": "2026-04-28"
+      }
+    },
+    "120": {
+      "draw_count": 1,
+      "range": {
+        "from": "2026-04-28",
+        "to": "2026-04-28"
+      }
+    },
+    "365": {
+      "draw_count": 1,
+      "range": {
+        "from": "2026-04-28",
+        "to": "2026-04-28"
+      }
+    }
+  },
+  "candidate_sets": {
+    "method": "Consistent Weighted Recent Frequency Algorithm v1",
+    "status": "insufficient_data",
+    "reason": "Need at least 20 draws before producing data-backed candidate sets."
+  }
+}

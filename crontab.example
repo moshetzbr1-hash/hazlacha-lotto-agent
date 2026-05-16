@@ -1,0 +1,65 @@
+# חיבור הסוכן “ההצלחה שלי” להרצה אוטומטית
+
+החבילה הזו מוכנה להרצה אוטומטית. בתוך ChatGPT אין תהליך שרץ ברקע אחרי סגירת השיחה, ולכן החיבור מתבצע דרך אחד מהמקומות הבאים.
+
+## אפשרות מומלצת: GitHub Actions
+
+זו הדרך הנוחה ביותר להפעלה רציפה בלי להשאיר מחשב ביתי דולק.
+
+1. צור Repository חדש ב-GitHub.
+2. העלה אליו את כל הקבצים שבתיקייה הזו, כולל התיקייה הנסתרת:
+   `.github/workflows/double_lotto_agent.yml`
+3. עבור ל-Settings → Actions → General.
+4. תחת Workflow permissions בחר:
+   `Read and write permissions`
+5. שמור.
+6. עבור ללשונית Actions.
+7. בחר `Double Lotto Israel Agent`.
+8. לחץ `Run workflow` ובחר `fetch_and_report` לבדיקה ראשונה.
+
+לאחר מכן GitHub יריץ אוטומטית:
+- שלישי ומוצאי שבת סביב 23:30 לפי שעון ישראל.
+- דוח סטטיסטי פעם בחודשיים.
+
+הסוכן יעדכן את הקבצים:
+- `lotto_history.csv`
+- `lotto_history.json`
+- `lotto_stats_report.json`
+- `lotto_agent.log`
+
+## אפשרות Linux / שרת
+
+מתוך תיקיית הסוכן:
+
+```bash
+chmod +x install_linux_cron.sh
+./install_linux_cron.sh
+```
+
+בדיקה ידנית:
+
+```bash
+python3 lotto_agent.py fetch
+python3 lotto_agent.py report
+```
+
+## אפשרות Windows
+
+פתח PowerShell בתיקיית הסוכן והריץ:
+
+```powershell
+Set-ExecutionPolicy -Scope CurrentUser RemoteSigned
+.\install_windows_tasks.ps1
+```
+
+בדיקה ידנית:
+
+```powershell
+python lotto_agent.py fetch
+python lotto_agent.py report
+```
+
+## סטטוס חשוב
+
+הסוכן מוכן לחיבור, אבל הוא לא יכול לרוץ מתוך ChatGPT עצמו ללא סביבת הרצה חיצונית.
+ברגע שהקבצים מותקנים באחת מהאפשרויות למעלה, הוא יתחיל לשמור היסטוריה ולוג באופן אוטומטי.

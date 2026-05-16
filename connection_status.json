@@ -1,0 +1,25 @@
+{
+  "agent": "double_lotto_israel",
+  "timezone": "Asia/Jerusalem",
+  "fetch_schedule": "Tuesday and Saturday at 23:30",
+  "report_schedule": "Every two months on day 1 at 09:00",
+  "scheduler_status_in_this_environment": "not_active_no_scheduler_tool_available",
+  "created_at": "2026-05-16T22:38:01+03:00",
+  "seed_record": {
+    "source": "official_site",
+    "draw_id": "3920",
+    "draw_date": "2026-04-28",
+    "draw_time": "23:16",
+    "numbers": [
+      3,
+      7,
+      12,
+      18,
+      24,
+      27
+    ],
+    "strong_number": 5,
+    "fetched_at": "2026-05-16T22:38:01+03:00",
+    "source_url": "https://www.pais.co.il/lotto/"
+  }
+}

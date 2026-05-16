@@ -1,0 +1,2 @@
+2026-05-16T22:38:01+03:00	INFO	Created local history store and seeded latest parsed official-site result: draw_id=3920 date=2026-04-28 numbers=3,7,12,18,24,27 strong=5
+2026-05-16T22:38:01+03:00	WARN	Scheduler is not active in this ChatGPT sandbox; use crontab.example or a hosted scheduler to run automatically.
