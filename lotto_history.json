@@ -15,5 +15,22 @@
     "strong_number": 5,
     "fetched_at": "2026-05-16T22:38:01+03:00",
     "source_url": "https://www.pais.co.il/lotto/"
+  },
+  {
+    "source": "official_site",
+    "draw_id": "3945",
+    "draw_date": "2026-07-14",
+    "draw_time": "23:16",
+    "numbers": [
+      5,
+      8,
+      23,
+      26,
+      35,
+      37
+    ],
+    "strong_number": 7,
+    "fetched_at": "2026-07-15T00:29:34+03:00",
+    "source_url": "https://www.pais.co.il/lotto/"
   }
 ]
