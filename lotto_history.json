@@ -49,5 +49,22 @@
     "strong_number": 7,
     "fetched_at": "2026-08-09T00:56:30+03:00",
     "source_url": "https://www.pais.co.il/lotto/"
+  },
+  {
+    "source": "official_site",
+    "draw_id": "3954",
+    "draw_date": "2026-08-11",
+    "draw_time": "23:13",
+    "numbers": [
+      2,
+      6,
+      18,
+      20,
+      31,
+      34
+    ],
+    "strong_number": 6,
+    "fetched_at": "2026-08-12T00:13:39+03:00",
+    "source_url": "https://www.pais.co.il/lotto/"
   }
 ]
